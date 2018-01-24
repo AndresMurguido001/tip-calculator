@@ -18,15 +18,18 @@ names3 = ['more names', 'Harold']
 
 def find_names(array, name_to_check)
   i = 0
-  final = []
+  # final = []
   while i < array.length
     if array[i] == name_to_check
-       final << name_to_check
-    else
-       final
+      return ["#{name_to_check}"]
+    #    final << name_to_check
+    # else
+    #    final
     end
     i += 1
   end
 end
 #
 p find_names(names, "angel")
+
+p find_names(names, "joe")
